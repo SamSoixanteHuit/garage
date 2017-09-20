@@ -17,17 +17,18 @@ public class Vehicule {
     Double prix;
     String nom;
     // List<Option> options;
-    // Marque nomMarque;
+    public Marque nomMarque;
     
     public Vehicule() {
         
     }
     
-    public Vehicule(String Nom, Double Prix) {
+    public Vehicule(String Nom, Double Prix, Marque nomMarque) {
         
         System.out.println("Création d'une voiture.");
         nom = Nom;
         prix = Prix;
+        this.nomMarque = nomMarque;
                 
     }
     

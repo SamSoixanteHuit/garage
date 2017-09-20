@@ -32,6 +32,7 @@ public class Main {
         g1.addVoiture(d4_1);
         
         System.out.println(g1.toString());
+        System.out.println(lag1.nomMarque);
         
         
         

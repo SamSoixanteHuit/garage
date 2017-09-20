@@ -16,6 +16,7 @@ public class Lagouna extends Vehicule {
         super();
         nom = "Lagouna";
         prix = 15000.00;
+        nomMarque = Marque.values()[0];
     }
     
     
