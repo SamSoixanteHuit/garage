@@ -11,27 +11,8 @@ package com.activite01.voitures;
  */
 public enum Marque {
     
-    Reno("RENO"),
-    Pigeot("PIGEOT"),
-    Troen("TROEN");
+    RENO,
+    PIGEOT,
+    TROEN;
     
-    private String nomMarque = "";
-    
-    // Constructeur
-    Marque(String nomMarque) {
-        this.nomMarque = nomMarque;
-    }
-    
-    
-    
-    /*Reno,
-    Pigeot,
-    Troen;
-    
-    private Marque nomMarque;
-    
-    // Constructeur
-    Marque(Marque nomMarque) {
-        this.nomMarque = nomMarque;
-    }*/
 }

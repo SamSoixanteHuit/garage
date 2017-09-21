@@ -12,11 +12,12 @@ package com.activite01.voitures;
 public class Lagouna extends Vehicule {
     
     
+    
     public Lagouna() {
         super();
         nom = "Lagouna";
         prix = 15000.00;
-        nomMarque = Marque.values()[0];
+        this.nomMarque = Marque.values()[0];
     }
     
     
