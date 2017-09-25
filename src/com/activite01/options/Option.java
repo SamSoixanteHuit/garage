@@ -11,4 +11,8 @@ package com.activite01.options;
  */
 public interface Option {
     
+    public String getNom();
+    
+    public Double getPrix();
+    
 }

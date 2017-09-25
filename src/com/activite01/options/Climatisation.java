@@ -9,6 +9,18 @@ package com.activite01.options;
  *
  * @author utilisateur
  */
-public class Climatisation {
+public class Climatisation implements Option {
+    
+    public String getNom() {
+        
+        return "Climatisation";
+        
+    }
+    
+    public Double getPrix() {
+        
+        return 347.3;
+        
+    }
     
 }

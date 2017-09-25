@@ -24,7 +24,19 @@ public class Garage {
     
     public String toString() {
         
+        
+        
         String str = "";
+        
+        if ( voitures.isEmpty())
+            str += "Aucune voiture sauvegardée\n";
+        
+        str += "****************************\n";
+        str += "*  Garage OpenClassrooms   *\n";
+        str += "****************************\n";
+        
+        
+            
         
         for ( Vehicule item : voitures ) {
             

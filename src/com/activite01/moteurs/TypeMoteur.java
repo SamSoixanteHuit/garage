@@ -11,4 +11,6 @@ package com.activite01.moteurs;
  */
 public enum TypeMoteur {
     
+    DIESEL, ESSENCE, HYBRIDE, ELECTRIQUE;
+    
 }

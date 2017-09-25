@@ -9,6 +9,18 @@ package com.activite01.options;
  *
  * @author utilisateur
  */
-public class BarreDeToit {
+public class BarreDeToit implements Option {
+
+    public String getNom() {
+        
+        return "Barre de toit";
+        
+    }
+    
+    public Double getPrix() {
+        
+        return 29.9;
+        
+    }
     
 }

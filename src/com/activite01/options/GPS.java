@@ -9,6 +9,18 @@ package com.activite01.options;
  *
  * @author utilisateur
  */
-public class GPS {
+public class GPS implements Option {
+    
+    public String getNom() {
+        
+        return "GPS";
+        
+    }
+    
+    public Double getPrix() {
+        
+        return 113.5;
+        
+    }
     
 }

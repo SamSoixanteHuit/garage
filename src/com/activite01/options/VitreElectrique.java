@@ -9,6 +9,18 @@ package com.activite01.options;
  *
  * @author utilisateur
  */
-public class VitreElectrique {
+public class VitreElectrique implements Option {
+    
+    public String getNom() {
+        
+        return "Vitre electrique";
+        
+    }
+    
+    public Double getPrix() {
+        
+        return 212.35;
+        
+    }
     
 }

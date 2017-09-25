@@ -9,6 +9,16 @@ package com.activite01.moteurs;
  *
  * @author utilisateur
  */
-public class MoteurEssence {
+public class MoteurEssence extends Moteur {
+    
+        
+    public MoteurEssence(String cylindre, Double prix) {
+        
+        super();
+        this.cylindre = cylindre;
+        this.prix = prix;
+        this.type = TypeMoteur.values()[1];
+        
+    }
     
 }

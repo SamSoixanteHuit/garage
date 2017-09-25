@@ -9,6 +9,18 @@ package com.activite01.options;
  *
  * @author utilisateur
  */
-public class SiegeChauffant {
+public class SiegeChauffant implements Option {
+    
+    public String getNom() {
+        
+        return "Siege chauffant";
+        
+    }
+    
+    public Double getPrix() {
+        
+        return 562.9;
+        
+    }
     
 }
