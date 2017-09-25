@@ -3,14 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.activite01.voitures;
+package com.activite01.moteurs;
 
 /**
  *
  * @author utilisateur
  */
-public enum Marque {
-    
-    RENO, PIGEOT, TROEN;
+public enum TypeMoteur {
     
 }
