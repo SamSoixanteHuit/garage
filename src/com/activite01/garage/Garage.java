@@ -7,7 +7,12 @@ package com.activite01.garage;
 
 import com.activite01.voitures.*;
 import java.util.ArrayList;
-
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.BufferedReader;
+import java.io.IOException;
 /**
  *
  * @author utilisateur
@@ -20,28 +25,65 @@ public class Garage {
         
         voitures.add(voiture);
         
+        File file = new File("garage.txt");
+        FileWriter fw;
+        
+        try {
+            
+            fw = new FileWriter(file);
+            String str = "";
+            
+            for (Vehicule item : voitures) {
+                
+                str += item.toString() + "\n";
+                
+            }
+            
+            fw.write(str);
+            
+            fw.close();
+            
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        
+        
     }
     
     public String toString() {
         
         
-        
+        File file = new File("garage.txt");
+        FileReader fr;
         String str = "";
         
-        if ( voitures.isEmpty())
-            str += "Aucune voiture sauvegardée\n";
-        
-        str += "****************************\n";
-        str += "*  Garage OpenClassrooms   *\n";
-        str += "****************************\n";
-        
-        
+        //if ( voitures.isEmpty())
+        //    System.out.println("\u001B[31mAucune voiture sauvegardée\n");       
+        //for ( Vehicule item : voitures ) {
             
-        
-        for ( Vehicule item : voitures ) {
+            //str += item.toString() + "\n";          
+        //}   
+        try {
+
+            fr = new FileReader(file);
+            if(fr.read() == -1)
+                System.out.println("\u001B[31mAucune voiture sauvegardée !\n");
+            str += "****************************\n";
+            str += "*  Garage OpenClassrooms   *\n";
+            str += "****************************\n";
+            int i = 0;
             
-            str += item.toString() + "\n";
+            while(( i = fr.read()) != -1 )
+                str += (char)i;       
             
+        } catch(FileNotFoundException e) {
+            e.printStackTrace();
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
         
         return str;
