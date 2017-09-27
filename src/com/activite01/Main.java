@@ -67,7 +67,10 @@ public class Main {
         d4_2.addOption(new Climatisation());
         d4_2.addOption(new GPS());
         d4_2.addOption(new VitreElectrique());
-        garage.addVoiture(d4_2);  
+        garage.addVoiture(d4_2);
+        
+        
+        
         
         
         

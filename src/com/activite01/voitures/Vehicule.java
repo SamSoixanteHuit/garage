@@ -58,7 +58,7 @@ public class Vehicule {
         if ( this.moteur != null )       
             str = "+ Voiture " + this.nomMarque + " : " + this.getNom() + " " + this.moteur.toString() + " " + this.getOptions() + " d'une valeur totale de " + (this.moteur.getPrix() + prixOptions) + "€"; 
         else 
-            str = "+ Voiture " + this.nomMarque + " : " + this.getNom() + " [pas de moteur] " + this.getOptions() + " d'une valeur totale de " + (prixOptions) + "€";
+            str = "+ Voiture " + this.nomMarque + " : " + this.getNom() + " [] " + this.getOptions() + " d'une valeur totale de " + (prixOptions) + "€";
         return str;
         
     }
@@ -89,8 +89,8 @@ public class Vehicule {
                     str += ", ";           
             }
         }
-        else
-            str += "pas d'option";
+        //else
+        //    str += "pas d'option";
         
         str += "]";
         return str;

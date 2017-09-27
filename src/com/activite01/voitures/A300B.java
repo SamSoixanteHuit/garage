@@ -16,7 +16,7 @@ public class A300B extends Vehicule {
         super();
         nom = "A3OOB";
         prix = 17500.00;
-        nomMarque = Marque.values()[0];
+        nomMarque = Marque.values()[1];
         
     }
     

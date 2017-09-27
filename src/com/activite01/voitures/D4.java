@@ -16,7 +16,7 @@ public class D4 extends Vehicule {
         super();
         nom = "D4";
         prix = 12500.00;
-        nomMarque = Marque.values()[0];
+        nomMarque = Marque.values()[2];
         
     }
     

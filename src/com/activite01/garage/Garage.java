@@ -11,7 +11,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.BufferedReader;
 import java.io.IOException;
 /**
  *
@@ -28,10 +27,11 @@ public class Garage {
         File file = new File("garage.txt");
         FileWriter fw;
         
+        
         try {
             
             fw = new FileWriter(file);
-            String str = "";
+            String str = "\n";
             
             for (Vehicule item : voitures) {
                 
@@ -59,15 +59,9 @@ public class Garage {
         File file = new File("garage.txt");
         FileReader fr;
         String str = "";
-        
-        //if ( voitures.isEmpty())
-        //    System.out.println("\u001B[31mAucune voiture sauvegardée\n");       
-        //for ( Vehicule item : voitures ) {
-            
-            //str += item.toString() + "\n";          
-        //}   
+           
         try {
-
+            
             fr = new FileReader(file);
             if(fr.read() == -1)
                 System.out.println("\u001B[31mAucune voiture sauvegardée !\n");
@@ -77,7 +71,8 @@ public class Garage {
             int i = 0;
             
             while(( i = fr.read()) != -1 )
-                str += (char)i;       
+                str += (char)i;
+            
             
         } catch(FileNotFoundException e) {
             e.printStackTrace();
